@@ -28,4 +28,4 @@ depends "php"
 
 %w{ debian ubuntu windows centos redhat scientific oracle }.each do |os|
   supports os
-end
+end	
