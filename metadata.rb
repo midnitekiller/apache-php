@@ -19,10 +19,10 @@ version '0.1.0'
   depends cb
 end
 
-# depends "apt"
-# depends "build-essential"
-# depends "git"
-# depends "vim"
+depends "apt"
+depends "build-essential"
+depends "git"
+depends "vim"
 depends "apache2"
 depends "php"
 
