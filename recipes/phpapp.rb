@@ -4,7 +4,6 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-depends "apache2"
 
 
 directory '/var/www/myapp' do
@@ -12,6 +11,7 @@ directory '/var/www/myapp' do
 end
 
 template '/etc/apache2/sites-available/default-site' do
+  action :create
   source 'default-site.conf.erb'
 end
 
