@@ -35,7 +35,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.cookbooks_path = %w(cookbooks berks-cookbooks site-cookbooks)
     chef.roles_path     = 'roles'
     chef.data_bags_path = 'data_bags' 
-    chef.add_recipe "AET::default"
+    chef.add_recipe "AET::base"
     chef.log_level = :debug
   end
 
