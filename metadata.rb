@@ -21,8 +21,8 @@ end
 
 depends 'apt', '= 3.0.0'
 depends 'build-essential', '= 3.2.0'
-depends "git"
-depends "vim"
+# depends "git"
+# depends "vim"
 depends "apache2"
 depends "php"
 
