@@ -11,12 +11,12 @@ include_recipe "apache2::mod_php5"
 include_recipe "php"
 
 
-web_app "my_site" do
-      server_name node['hostname']
-      server_aliases [node['fqdn'], "my-site.example.com"]
-      docroot "/srv/www/my_site"
-      cookbook 'apache2'
-end
+# web_app "my_site" do
+#       server_name node['hostname']
+#       server_aliases [node['fqdn'], "my-site.example.com"]
+#       docroot "/srv/www/my_site"
+#       cookbook 'apache2'
+# end
 
 
 # include_recipe "php::mod_php5"
