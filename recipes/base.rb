@@ -19,9 +19,18 @@ web_app "aetdeploy" do
       cookbook 'apache2'
 end
 
+apache_module "mpm_prefork" do
+      enable true
+end
+
+apache_module "mpm_event" do
+      enable false
+end
+
+
 directory '/var/www/aetdeploy' do
-  owner 'www-data'
-  group 'www-data'
+  owner 'root'
+  group 'root'
   mode '0755'
   action :create
 end
