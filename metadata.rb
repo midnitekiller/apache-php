@@ -25,6 +25,8 @@ depends 'build-essential', '= 3.2.0'
 # depends "vim"
 depends "apache2"
 depends "php"
+# depends "mysql2_chef_gem"
+
 
 %w{ debian ubuntu windows centos redhat scientific oracle }.each do |os|
   supports os
